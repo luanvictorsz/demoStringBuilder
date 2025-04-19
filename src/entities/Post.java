@@ -57,5 +57,8 @@ public class Post {
         return comments;
     }
 
-    
+    public void AddComment(Comment comment){
+        comments.add(comment);
+    }
+
 }
