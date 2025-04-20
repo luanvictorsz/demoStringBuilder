@@ -3,6 +3,7 @@ package application;
 import entities.Comment;
 import entities.Post;
 
+import java.io.Console;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -15,5 +16,7 @@ public class Main {
 
         p1.AddComment(c1);
         p1.AddComment(c2);
+
+        System.out.println(p1);
     }
 }
