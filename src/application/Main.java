@@ -13,5 +13,7 @@ public class Main {
         Comment c2 = new Comment("Wow that's awesome!");
         Post p1 = new Post(sdf.parse("18/04/2025 22:05:12"), "Traveling to New Zeland", "I'm going to visit this wonderful country!", 23);
 
+        p1.AddComment(c1);
+        p1.AddComment(c2);
     }
 }
