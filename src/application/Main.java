@@ -17,6 +17,14 @@ public class Main {
         p1.AddComment(c1);
         p1.AddComment(c2);
 
+        Comment c3 = new Comment("Good Night");
+        Comment c4 = new Comment("May the force be with you");
+        Post p2 = new Post(sdf.parse("21/04/2025 23:14:19"), "Good Night guys", "See you tomorrow", 5);
+
+        p2.AddComment(c3);
+        p2.AddComment(c4);
+
         System.out.println(p1);
+        System.out.println(p2);
     }
 }
