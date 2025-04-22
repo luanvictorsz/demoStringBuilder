@@ -6,11 +6,12 @@ import entities.Post;
 import java.io.Console;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-
+        Scanner sc = new Scanner(System.in);
 
 //      Comment c1 = new Comment("Have a nice trip!");
 //      Comment c2 = new Comment("Wow that's awesome!");
@@ -30,5 +31,14 @@ public class Main {
 //      System.out.println(p2);
 
         System.out.print("Enter the date: (DD/MM/YYYY): ");
+        String dateToday = sc.next();
+        System.out.print("Title: ");
+        String title = sc.next();
+        System.out.print("Message: ");
+        String message = sc.next();
+
+        Post newPost = new Post(sdf.parse(dateToday), title, message, 23);
+
+        sc.close();
     }
 }
